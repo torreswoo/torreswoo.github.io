@@ -1,9 +1,9 @@
 ---
 bg: "tag.jpg"
 layout: page
-permalink: /posts/
 title: "Archive"
 crawlertitle: "All articles"
+permalink: /archive/
 summary: "Posts about jekyll"
 active: archive
 ---
