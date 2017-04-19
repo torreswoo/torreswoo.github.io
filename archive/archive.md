@@ -1,5 +1,5 @@
 ---
-bg: "tag.jpg"
+bg: "archive/archive_main.jpeg"
 layout: page
 title: "Archive"
 crawlertitle: "All articles"
