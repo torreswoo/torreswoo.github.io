@@ -7,6 +7,7 @@ permalink: /archive/
 summary: "Posts about jekyll"
 active: archive
 ---
+<a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>
 
 {% for tag in site.tags %}
   {% assign t = tag | first %}
@@ -32,3 +33,4 @@ active: archive
 
 
 {% endfor %}
+
