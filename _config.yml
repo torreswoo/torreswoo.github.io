@@ -40,3 +40,7 @@ sass:
   style: compressed
 
 images: '/assets/images'
+
+# GA
+google_analytics:
+  id: "UA-96861113-1"
