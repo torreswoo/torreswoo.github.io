@@ -14,7 +14,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 lang: "en"
-url: "http://localhost:4000" # the base hostname & protocol for your site
+#url: "http://localhost:4000" # the base hostname & protocol for your site
 github_username: torreswoo
 linkedin_username: jongho-woo-b92098b4
 facebook_username: torres.woo
@@ -42,5 +42,4 @@ sass:
 images: '/assets/images'
 
 # GA
-google_analytics:
-  id: "UA-96861113-1"
+google_analytics: "UA-96861113-1"
