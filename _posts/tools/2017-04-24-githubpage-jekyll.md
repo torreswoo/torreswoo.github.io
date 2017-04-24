@@ -116,91 +116,19 @@ google_analytics: "UA-..."
 
 # Google Search Console
 ![](/assets/images/posts/tools/jekyll/ga_search_console.png)
+
 - google & naver & daum에서 각각 블로그의 글들이 검색가능하게 설정을 해주어야한다. 웹마스터, 구글의 경우에서는 search console에서 설정을 해주어야한다. 
 - sitemap, RSS feed, robots.txt 생성
 - 참고 : http://jinyongjeong.github.io/2017/01/13/blog_make_searched/
 - Google Search Console :https://www.google.com/webmasters/tools/
 - Naver Web Master : http://webmastertool.naver.com/board/main.naver
 - 필요파일작성
-- sitemap.xml
-{% highlight bash %}
----
-sitemap:
-    priority: 1.0
-    changefreq: weekly
----
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
- 
-  {% for post in site.posts %}
-  <url>
-    <loc>{{ site.url }}{{ post.url }}</loc>
-    {% if post.lastmod == null %}
-      <lastmod>{{ post.date | date: "%Y-%m-%d" }}</lastmod>
-    {% else %}
-      <lastmod>{{ post.lastmod | date: "%Y-%m-%d" }}</lastmod>
-    {% endif %}
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  {% endfor %}
-   
-  {% for page in site.pages %}
-    {% if page.sitemap != null and page.sitemap != empty %}
-    <url>
-      <loc>{{ site.url }}{{ page.url }}</loc>
-      <changefreq>{{ page.sitemap.changefreq }}</changefreq>
-      <priority>{{ page.sitemap.priority }}</priority>
-    </url>
-    {% endif %}
-  {% endfor %}
- 
-</urlset>
-{% endhighlight %}
-
-- feed.xml
-{% highlight bash %}
----
-layout: null
----
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.posts limit:5 %}
-      <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-        {% for tag in post.tags %}
-        <category>{{ tag | xml_escape }}</category>
-        {% endfor %}
-        {% for cat in post.categories %}
-        <category>{{ cat | xml_escape }}</category>
-        {% endfor %}
-      </item>
-    {% endfor %}
-  </channel>
-</rss>
-{% endhighlight %}
-
-- robots.txt
-{% highlight bash %}
-User-agent: *
-Allow: /
- 
-Sitemap: https://torreswoo.github.io/sitemap.xml
-{% endhighlight %}
+- sitemap.xml : https://github.com/torreswoo/torreswoo.github.io/blob/master/sitemap.xml
+- feed.xml : https://github.com/torreswoo/torreswoo.github.io/blob/master/feed.xml
+- robots.txt : https://github.com/torreswoo/torreswoo.github.io/blob/master/robots.txt
 
 # Google Data studio
 ![](/assets/images/posts/tools/jekyll/ga_data_studio.png)
+
 - https://datastudio.google.com/
 - 데이터 소스가 GA, Google Search Console이 생겼으니 이제 시각화를 해보자.
