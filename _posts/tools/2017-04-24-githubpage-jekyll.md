@@ -88,7 +88,7 @@ images: '/assets/images'
 ![](/assets/images/posts/tools/jekyll/ga.png)
 
 - Google Analytics : https://analytics.google.com/analytics/web/
-- 계정 torres > 속성 및 앱 torreswoo.github.io (추적ID: UA-96861113-1) >
+- 계정 torres > 속성 및 앱 torreswoo.github.io (추적ID: UA-...) >
 - Jekyll에 GA추가 : https://aweekj.github.io/2016-08-08/jekyll-with-google-analytics/
 {% highlight bash %}
 # _config.yml - 01. GA id생성
@@ -132,3 +132,15 @@ google_analytics: "UA-..."
 
 - https://datastudio.google.com/
 - 데이터 소스가 GA, Google Search Console이 생겼으니 이제 시각화를 해보자.
+
+### 참고사이트
+- http://jekyllrb-ko.github.io/
+- https://aweekj.github.io/2016-08-08/jekyll-with-google-analytics/
+- jekyll intro : https://nolboo.kim/blog/2013/10/15/free-blog-with-github-jekyll/
+- http://tech.kakao.com/2016/07/07/tech-blog-story/
+- Hexo : http://holaxprogramming.com/2017/04/16/github-page-and-hexo/
+- Hugo : https://gohugo.io/
+- http://blog.saltfactory.net/upgrade-github-pages-dependency-versions/
+- http://thdev.net/644
+- http://dogfeet.github.io/articles/2012/github-pages.html
+- http://blog.saltfactory.net/create-personal-web-site-using-with-github-pages/
