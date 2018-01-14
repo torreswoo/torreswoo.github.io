@@ -1,7 +1,7 @@
 ---
 bg: "posts/tools/jekyll/jekyll_bg.png"
 layout: post
-title:  "Tools - Github page & Jekyll & Google Analytics"
+title:  "Github page / Jekyll / GA - 블로그 시작하기"
 crawlertitle: "Github page & Jekyll & Google Analytics"
 summary: "Github page & Jekyll & Google Analytics"
 date:   2017-04-24 14:09:47 +0700
