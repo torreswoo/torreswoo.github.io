@@ -1,3 +1,10 @@
+## Jekyll
+- local run
+```
+$ jekyll serve --watch
+# localhost:4000
+``` 
+
 ## Voyager
 
 Just another jekyll theme. Demo: <http://redvi.github.io/voyager>
