@@ -6,7 +6,7 @@ crawlertitle: "Ruby & Rails & devise & rolify & authority"
 summary: "Ruby On Rails 인증 & 권한 관리"
 date:   2018-02-09 00:00:00 +0700
 categories: posts
-tags: ['Ruby On Rails', 'devise', 'rolify', 'authority']
+tags: ['Ruby On Rails','gem']
 author: torreswoo
 ---
 
@@ -141,8 +141,12 @@ end
 ![authority](/assets/images/posts/ruby/rails/auth/rails_authority.png)
   
 ## User Role Management UI page 
-https://github.com/torreswoo/template-Rails-Auth
-위 프로젝트는 설명한
+[Torres Template Project](https://github.com/torreswoo/template-Rails-Auth)
+![permission_policy](/assets/images/posts/ruby/rails/auth/permission_policy.png)
+![audit_log_modal](/assets/images/posts/ruby/rails/auth/audit_log_modal.png)
+위 프로젝트는 설명한 gem을 이용해서 rails console을 통해 role을 부여하고 삭제한것을 UI로 컨트롤 할 수 있다
+또한 Audit log를 보여주어서 각각의 리소스들의 CRUD변경이력을 누가한것인지 확인할 수 있다.
+
 
 ---
 참고
