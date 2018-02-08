@@ -10,13 +10,13 @@ tags: ['Ruby On Rails','gem']
 author: torreswoo
 ---
 
-
 ### contents
 - intro : background 
 - gem - devise / rolify / authority 
 - devise : Flexible authentication solution for Rails with Warden 
 - rolify : Role management library with resource scoping
 - authority : Authority helps you authorize actions in your Rails app
+
 ---
 
 ## intro : background 
